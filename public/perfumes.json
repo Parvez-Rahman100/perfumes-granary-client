@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Eau de Lubin",
+        "price": "1300",
+        "quantity":"10",
+        "supplier":"Abid Hasan",
+        "details": "Coverage of Morning Sessions.On-location Portrait Session. Everyday clothes. 50 High-res Artistically Edited Digital Images. License for Unlimited Personal Use",
+        "img": "https://i.ibb.co/WghfvPs/4906-ee02abb7a28d6e2eeb8360e969136ca5-mod-original.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jean Marie Farina",
+        "price": "1000",
+        "quantity":"20",
+        "supplier":"Shamrat",
+        "details": "Styling Recommendations. Meals Sitdown celebrations in Digital Images.Unlimited Coverage Locations. License for Unlimited Personal Use.",
+        "img": "https://i.ibb.co/qndBcv7/110960.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Pot Pourri",
+        "price": "1200",
+        "quantity":"30",
+        "supplier":"Tanvir",
+        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "img": "https://i.ibb.co/fNS3NMw/522447-240816-gs-ep-10.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Au Fil de l'Eau",
+        "price": "1200",
+        "quantity":"40",
+        "supplier":"Sami",
+        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "img": "https://i.ibb.co/0tQVcb5/bdcd1319506f3843c305efc40690abfb.jpg"
+    },
+    {
+        "id": 5,
+        "name": "L'Origan",
+        "price": "1200",
+        "quantity":"50",
+        "supplier":"Bogo",
+        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "img": "https://i.ibb.co/LhTG48V/Most-Expensive-Perfumes-Caron-Poivre.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Narcisse Noir",
+        "price": "1200",
+        "quantity":"60",
+        "supplier":"Ratul",
+        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "img": "https://i.ibb.co/PctHrv1/most-expensive-perfumes-insert1.jpg"
+    }
+]
