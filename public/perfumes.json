@@ -2,46 +2,46 @@
     {
         "id": 1,
         "name": "Eau de Lubin",
-        "price": "1300",
+        "price": "300",
         "quantity":"10",
         "supplier":"Abid Hasan",
-        "details": "Coverage of Morning Sessions.On-location Portrait Session. Everyday clothes. 50 High-res Artistically Edited Digital Images. License for Unlimited Personal Use",
+        "details": "main types are warm, woody, oriental and fresh, with each effect brought out by different combinations of fragrances.",
         "img": "https://i.ibb.co/WghfvPs/4906-ee02abb7a28d6e2eeb8360e969136ca5-mod-original.jpg"
     },
     {
         "id": 2,
         "name": "Jean Marie Farina",
-        "price": "1000",
+        "price": "100",
         "quantity":"20",
         "supplier":"Shamrat",
-        "details": "Styling Recommendations. Meals Sitdown celebrations in Digital Images.Unlimited Coverage Locations. License for Unlimited Personal Use.",
+        "details": "Fresh scents, like Davidoff Cool Water, generally rely on aquatic and citrus notes, whereas warm scents.",
         "img": "https://i.ibb.co/qndBcv7/110960.jpg"
     },
     {
         "id": 3,
         "name": "Pot Pourri",
-        "price": "1200",
+        "price": "700",
         "quantity":"30",
         "supplier":"Tanvir",
-        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "details": "Fresh fragrances usually comprise of citrus, water and green notes.",
         "img": "https://i.ibb.co/fNS3NMw/522447-240816-gs-ep-10.jpg"
     },
     {
         "id": 4,
         "name": "Au Fil de l'Eau",
-        "price": "1200",
+        "price": "800",
         "quantity":"40",
         "supplier":"Sami",
-        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "details": "Citrus-based fragrances are usually created with lemon, mandarin and bergamot, while water fragrances are made with aquatic notes",
         "img": "https://i.ibb.co/0tQVcb5/bdcd1319506f3843c305efc40690abfb.jpg"
     },
     {
         "id": 5,
         "name": "L'Origan",
-        "price": "1200",
+        "price": "600",
         "quantity":"50",
         "supplier":"Bogo",
-        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "details": "Floral fragrances are one of the most popular families, and one of the broadest.",
         "img": "https://i.ibb.co/LhTG48V/Most-Expensive-Perfumes-Caron-Poivre.jpg"
     },
     {
@@ -50,7 +50,61 @@
         "price": "1200",
         "quantity":"60",
         "supplier":"Ratul",
-        "details": "On-location Portrait Session . Styling Recommendations .200 High-res Artistically Edited Digital Images .Shoot online gallery. Royal free images on USB ",
+        "details": "sweet and flowery scent will belong under this family, using notes such as roses, jasmine, lilies and peonies.",
         "img": "https://i.ibb.co/PctHrv1/most-expensive-perfumes-insert1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Violette Précieuse",
+        "price": "700",
+        "quantity":"70",
+        "supplier":"Siam",
+        "details": "Oriental fragrances are warm, sweet and even a little spicy.",
+        "img": "https://i.ibb.co/8jyVdVq/Passant-Guardant-perfume.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Émeraude",
+        "price": "1200",
+        "quantity":"80",
+        "supplier":"Rejvi",
+        "details": "A more luxurious fragrance family, oriental fragrances vary from floral oriental, soft oriental and woody oriental.",
+        "img": "https://i.ibb.co/HPdy7GQ/perfume-800x427.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Émeraude",
+        "price": "500",
+        "quantity":"80",
+        "supplier":"Rejvi",
+        "details": "A more luxurious fragrance family, oriental fragrances vary from floral oriental, soft oriental and woody oriental.",
+        "img": "https://i.ibb.co/HPdy7GQ/perfume-800x427.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Bellodgia",
+        "price": "200",
+        "quantity":"90",
+        "supplier":"Anik",
+        "details": "Perfumes and aftershaves in this family are rich and sensual, often made with interesting notes of cardamom, cinnamon.",
+        "img": "https://i.ibb.co/vCN1yMr/uniquee-luxury-crush-on-me-extrait-de-parfum-100ml.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Dunhill for Men",
+        "price": "300",
+        "quantity":"100",
+        "supplier":"Shourav",
+        "details": "Woody fragrances are another warm family, with a mysterious and captivating scent .",
+        "img": "https://i.ibb.co/HPdy7GQ/perfume-800x427.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Nuit de Longchamp",
+        "price": "500",
+        "quantity":"110",
+        "supplier":"Harun",
+        "details": "You will often see top, middle and base notes being used to describe a fragrance.",
+        "img": "https://i.ibb.co/qD4VxWc/best-perfumes-women-philosophy-fresh-cream-luxe-digital-780x520.jpg"
     }
 ]

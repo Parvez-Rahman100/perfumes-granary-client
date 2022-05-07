@@ -1,24 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import useProducts from '../../../hooks/useProducts';
 import Product from '../../Product/Product';
 import Banner from '../Banner/Banner';
 
 const Home = () => {
-    const [perfumes,setPerfumes] = useState([])
-    useEffect(()=>{
-        const url = 'perfumes.json';
-        fetch(url)
-        .then(res => res.json())
-        .then(data => setPerfumes(data))
-    },[])
+    const [perfumes] = useProducts();
     return (
         <div>
             <Banner></Banner>
             <h1 className='my-3 text-primary'>Our Products</h1>
-            <h2>length : {perfumes.length}</h2>
             <div className='container'>
             <div className='row g-5'>
             {
-                perfumes.map(perfume => <Product key={perfume.id}
+                perfumes.slice(0,6).map(perfume => <Product key={perfume._id}
                 perfume={perfume}
                 ></Product>)
             }
