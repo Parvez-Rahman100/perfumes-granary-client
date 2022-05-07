@@ -5,9 +5,9 @@ const Product = ({perfume}) => {
     const {name,id,details,img,quantity,supplier,price} = perfume;
     return (
         <div className='col-lg-4 col-sm-12 col-md-6'>
-            <div >
+            <div  >
             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={img} />
+            <Card.Img  variant="top" src={img} />
             <Card.Body>
             <Card.Title>{name}</Card.Title>
             <Card.Title>${price}</Card.Title>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     const [perfumes,setPerfumes] = useState([])
@@ -11,6 +12,7 @@ const Home = () => {
     },[])
     return (
         <div>
+            <Banner></Banner>
             <h1 className='my-3 text-primary'>Our Products</h1>
             <h2>length : {perfumes.length}</h2>
             <div className='container'>
