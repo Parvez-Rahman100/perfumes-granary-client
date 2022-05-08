@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import perfume1 from '../../../assets/perfume1.jpg';
-import perfume2 from '../../../assets/perfume2.png';
+import perfume1 from '../../../assets/perfume1.png';
+import perfume2 from '../../../assets/perfume2.jpg';
 import perfume3 from '../../../assets/perfume3.png';
 
 const Banner = () => {

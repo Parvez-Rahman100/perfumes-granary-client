@@ -12,7 +12,7 @@ const Header = () => {
   }
     return (
         <div>
-            <Navbar style={{backgroundColor: 'rgba(255, 107, 129,1.0)'}} collapseOnSelect expand="lg"  variant="dark">
+            <Navbar style={{backgroundColor: 'rgba(19, 15, 64,1.0)'}} collapseOnSelect expand="lg"  variant="dark">
   <Container>
   <Navbar.Brand as={Link} to="/home">Perfumes Granary</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
