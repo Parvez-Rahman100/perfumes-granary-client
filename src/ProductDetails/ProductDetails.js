@@ -5,11 +5,28 @@ const ProductDetails = () => {
     const { perfumeId } = useParams();
     const [perfume,setPerfume] = useState({});
     useEffect(()=>{
-        const url = `http://localhost:5000/productDetails/${perfumeId}`;
+        const url = `https://perfumes-granary.herokuapp.com/productDetails/${perfumeId}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setPerfume(data))
     },[perfumeId]);
+
+
+    const handleDeleveredProduct = event =>{
+        const quantity = parseInt(perfume.quantity) - 1
+        fetch(` https://perfumes-granary.herokuapp.com/productDetails/${perfumeId}`, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({ quantity })
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result)
+                setPerfume(result)
+            })
+    }
     return (
         <div className='d-flex justify-content-center align-items-center my-5'>
            <div className="card" style={{width: '18rem'}}>
@@ -20,7 +37,7 @@ const ProductDetails = () => {
             <h5>Quantity :{perfume.quantity}</h5>
             <h4>Price : {perfume.price}</h4>
             <h5>Suppilier : {perfume.supplier}</h5>
-            <button className='btn btn-primary'>Deliver Product</button>
+            <button onClick={handleDeleveredProduct} className='btn btn-primary'>Deliver Product</button>
         </div>
         </div>
         </div>

@@ -7,7 +7,7 @@ const ManageProducts = () => {
     const handleRemoveBtn = id =>{
         const confirmation = window.confirm('Are you sure?');
         if(confirmation){
-            const url = `http://localhost:5000/productDetails/${id}`;
+            const url = `https://perfumes-granary.herokuapp.com/productDetails/${id}`;
             fetch(url,{
                 method:'DELETE'
             })
