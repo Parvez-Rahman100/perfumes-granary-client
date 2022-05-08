@@ -7,17 +7,16 @@ import { useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
     const navigate = useNavigate();
     let errorMessage;
-    if (error || error1) {
+    if (error ) {
          errorMessage = <div>
             <p className='text-danger'>Error: {error.message}</p>
           </div>
       }
 
 
-      if(user || user1){
+      if(user ){
         navigate('/home');
       }
     return (
@@ -33,12 +32,6 @@ const SocialLogin = () => {
                 className='btn btn-info mx-auto d-block w-50 my-3'>
                     <img className='mx-2 ' style={{width:'30px'}}  alt="" />
                     Google SignIn
-                    </button>
-                <button 
-                    onClick={()=>signInWithGithub()}
-                    className='btn btn-info mx-auto d-block w-50 my-3'>
-                    <img className='mx-2 '  alt="" />
-                    Github SignIn
                     </button>
 
         </div>
