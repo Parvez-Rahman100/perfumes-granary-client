@@ -21,8 +21,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='text-dark'>Jean Marie Farina</h3>
+          <p className='text-dark'>Fresh scents, like Davidoff Cool Water, generally rely on aquatic and citrus notes.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,8 +33,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className='text-dark'>Pot Pourri</h3>
+          <p className='text-dark'>Fresh fragrances usually comprise of citrus, water and green notes.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -45,9 +45,9 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h3 className='text-dark'>L'Origan</h3>
+          <p className='text-dark'>
+          Sweet and flowery scent will belong under this family
           </p>
         </Carousel.Caption>
       </Carousel.Item>
