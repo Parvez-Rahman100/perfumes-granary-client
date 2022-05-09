@@ -22,7 +22,7 @@ const ManageProducts = () => {
     }
     return (
         <div>
-            <h1 className='text-center text-danger my-3'>Manage your products</h1>
+            <h1 className='text-center text-dark my-3'>Manage your products</h1>
             {
                 perfumes.map(perfume => <div key={perfume._id}>
                     <div> 

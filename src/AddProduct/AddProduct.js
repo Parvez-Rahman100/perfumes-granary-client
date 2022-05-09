@@ -22,7 +22,7 @@ const AddProduct = () => {
     };
     return (
        <div className='w-50 mx-auto' >
-        <h1 className='text-center text-danger my-3'>Add Your Product</h1>
+        <h1 className='text-center text-dark my-3'>Add Your Product</h1>
            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
            <input className='my-2' placeholder='Photo URL' {...register("img")} />
         <input className='my-2' placeholder='Product Name' {...register("name", { required: true, maxLength: 20 })} />
