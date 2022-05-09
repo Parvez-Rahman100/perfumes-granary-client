@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 const ProductDetails = () => {
     const { perfumeId } = useParams();
     const [perfume,setPerfume] = useState({});
+    // console.log(perfume);
     useEffect(()=>{
         const url = `https://perfumes-granary.herokuapp.com/productDetails/${perfumeId}`;
         fetch(url)
@@ -12,8 +13,13 @@ const ProductDetails = () => {
     },[perfumeId]);
 
 
-    const handleDeleveredProduct = event =>{
-        const quantity = parseInt(perfume.quantity) - 1
+    const handleUpdateProducts = event => {
+        event.preventDefault();
+
+        const quantity = parseInt(event.target.quantity.value);
+        // const newQuantity = (quantity + parseInt(product.quantity))
+        console.log(quantity);
+
         fetch(` https://perfumes-granary.herokuapp.com/productDetails/${perfumeId}`, {
             method: "PUT",
             headers: {
@@ -23,12 +29,40 @@ const ProductDetails = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result)
-                setPerfume(result)
+                console.log(result);
+                alert("Product Updated");
+                event.target.reset();
             })
     }
+
+
+    const handleDeleveredProduct = event =>{
+        const newQuantity = parseInt(perfume.quantity) - 1;
+        // console.log(quantity);
+        fetch(` https://perfumes-granary.herokuapp.com/productDetails/${perfumeId}`, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({ newQuantity }  )
+        })
+            .then(res => res.json())
+            .then(result => {
+                console.log(result)
+                alert('quantity updated');
+                setPerfume(result)
+                console.log(perfume);
+                
+            });
+    }
     return (
-        <div className='d-flex justify-content-center align-items-center my-5'>
+        <div className='w-50 my-3 mx-auto'>
+            <form className='d-flex flex-column' onSubmit={handleUpdateProducts}>
+                    <input placeholder='Quantity' type="number" name="quantity" id="" />
+                    <input className='btn w-25 mx-auto btn-primary mt-3' type="submit" value="Add Quantity" />
+                </form>
+
+                <div className='d-flex justify-content-center align-items-center my-5'>
            <div className="card" style={{width: '18rem'}}>
         <img src={perfume.img} className="card-img-top" alt="..." />
         <div className="card-body">
@@ -41,6 +75,8 @@ const ProductDetails = () => {
         </div>
         </div>
         </div>
+        </div>
+        
     );
 };
 

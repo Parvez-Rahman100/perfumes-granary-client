@@ -24,20 +24,20 @@ const ManageProducts = () => {
         <div>
             <h1 className='text-center text-danger my-3'>Manage your products</h1>
             {
-                perfumes.map(perfume => <>
-                <div> 
+                perfumes.map(perfume => <div key={perfume._id}>
+                    <div> 
             
-            <div className='d-flex justify-content-around align-items-center border '>
+            <div className='d-flex justify-content-around align-items-center border my-3 '>
                 <div className='d-flex justify-content-around align-items-center'>
-                    <img className='w-25 rounded-circle' src={perfume.img} alt="" />
-                    <p>{perfume.name}</p>
+                    <img style={{height:'50px',width:'50px', borderRadius:'50%'}} src={perfume.img} alt="" />
+                    <p className='ms-2'>{perfume.name}</p>
                 </div>
                 <div className='d-flex justify-content-center'>
                     <button onClick={()=>handleRemoveBtn(perfume._id)} className='btn btn-primary rounded'>Remove</button>
                 </div>
             </div>
         </div>
-                </>)
+                </div>)
             }
         </div>
     );

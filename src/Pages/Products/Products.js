@@ -6,8 +6,9 @@ const Products = () => {
     const [perfumes] = useProducts();
     return (
         <div>
+            <h1 className='text-center text-dark my-3'>Our Products</h1>
            <div className='container'>
-            <div className='row g-5'>
+            <div className='row g-5 my-4'>
             {
                 perfumes.map(perfume => <AllProducts key={perfume._id}
                 perfume={perfume}

@@ -12,7 +12,7 @@ const AllProducts = ({perfume}) => {
         <div className='col-lg-4 col-sm-12 col-md-6'>
         <div  >
         <Card style={{ width: '18rem' }}>
-        <Card.Img  variant="top" src={img} />
+        <Card.Img style={{height:'200px'}} variant="top" src={img} />
         <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Title>${price}</Card.Title>
